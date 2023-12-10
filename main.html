@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Paige</title>
+
+
+        <!--Links de referência para o css-->
+        <link rel="stylesheet" href="./styles/main.css">
+        <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+        <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat:wght@700&family=Jost:wght@500&family=Montserrat&family=Poppins:wght@300&family=Raleway:wght@500&family=Roboto:ital@1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/styles/hero.css">
+
+
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    </head>
+    <body>
+
+        <!--Construção do Menu-->
+        <div class="header">
+            <a href="#" class="logo">O Prato</a>
+
+            <input type="checkbox" id="check">
+             <label for="check" class="icons">
+                <i class='bx bx-menu' id="menu-icon"></i>
+                <i class='bx bx-x' id="close-icon"></i>
+             </label>
+
+             <nav class="navbar">
+                <a href="#home" style="--i:0;">Home</a>
+                <a href="#about" style="--i:1;">About</a>
+                 <a href="http://127.0.0.1:5500/menu.html" style="--i:2;">Menu</a>
+                 <a href="#service" style="--i:3;">Service</a>
+                 <a href="#contact" style="--i:4;">Contact</a>
+            </nav>
+        </div>
+        <!--Título inicial com uma linha horizontal-->
+        <div id="home" class="hero">
+            <h2>Da Grelha para o Coração</h2>
+            <div class="line"></div>
+            <h1>Descubra o Sabor Autêntico em Cada Hambúrguer!</h1>
+        </div>
+
+        <!--Categoria onde foi utilizado containers para a construção dos melhores hamburguers-->
+        <section>
+            <div class="most-popular">
+                <h1>Most Popular    </h1>
+                <div class="line"></div>
+                <div class="stars-container">
+                <span>
+                    <i class='bx bxs-star checked'></i>
+                    <i class='bx bxs-star checked'></i>
+                    <i class='bx bxs-star checked'></i>
+                    <i class='bx bxs-star checked'></i>
+                    <i class='bx bxs-star checked'></i>
+                </span>
+                </div>
+
+                <div class="card-container">
+                    <div class="card">
+                        <img src="/assets/image-menus-hamburguers/Ultimate Cheeseburguer.jpg" alt="ultimate-cheeseburguer">
+                        <div class="card-content">
+                            <h3>Ultimate Cheeseburguer</h3>
+                            <p>O Ultimate Cheese Burger do O Prato destaca-se como um dos melhores devido à combinação excepcional
+                                de carne suculenta, queijos premium, pão brioche fresco e molho secreto exclusivo.
+                                 Cada mordida oferece uma experiência culinária inigualável, tornando-o uma escolha incomparável para os amantes de hambúrgueres.</p>
+                             <a href="http://127.0.0.1:5500/menu.html" class="btn">Vew More</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="/assets/image-menus-hamburguers/artesanal-hamburguer.jpg" alt="ultimate-cheeseburguer">
+                        <div class="card-content">
+                            <h3>Hamburguer Artesanal</h3>
+                            <p>
+                                O hambúrguer artesanal do O Prato é considerado um dos melhores devido à meticulosa escolha de ingredientes de alta qualidade e à preparação artesanal. Cada mordida representa uma experiência única e autêntica,
+                                 refletindo a paixão pela excelência culinária que define o O Prato.</p>
+                             <a href="http://127.0.0.1:5500/menu.html" class="btn">Vew More</a>
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <img src="/assets/image-menus-hamburguers/hamburguer-misterio.png" alt="ultimate-cheeseburguer">
+                        <div class="card-content">
+                            <h3>Hamburguer Misterioso</h3>
+                            <p>O hambúrguer misterioso do O Prato é elogiado pela combinação secreta de ingredientes, criando uma experiência intrigante. Com preparação cuidadosa e sabor inigualável, este hambúrguer oferece uma jornada culinária única. No O Prato, o mistério culinário se 
+                                transforma em delícia, cativando os paladares com surpresas a cada mordida.</p>
+                             <a href="http://127.0.0.1:5500/menu.html" class="btn">Vew More</a>
+                        </div>
+                    </div>
+            
+            </div>
+        </section>
+
+        <!--Secção do About Us onde foi construido um texto e inserido a logo do restaurante-->
+        <section>
+            <div id="about" class="about-us">
+                <h1>About Us</h1>
+                <div class="line"></div>
+            </div>
+
+            <div class="about-container">
+                <section class="about">
+                    <div class="about-image">
+                        <img src="/assets/restaurante-logo/3437490.png" alt="the-plate">
+                    </div>
+                    <div class="about-content">
+                        <h2>A Nossa História</h2>
+                        <p>No O Prato, cada prato conta uma história. 
+                            Nasceu do amor pela arte de preparar hambúrgueres excepcionais, 
+                            uma narrativa que se desdobra em cada receita única. Desde a nossa fundação, 
+                            buscamos oferecer não apenas uma refeição, mas uma experiência que transcenda 
+                            o ordinário.</p>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+        <!--Secção do serviço onde foram também criado cards-->
+        <section>
+            <div id="service" class="our-service">
+                <h1>Our Service</h1>
+                <div class="line"></div>
+            </div>
+
+            
+            <div class="service-container">
+                <div class="service-card">
+                    <div class="services-icons">
+                        <i class='bx bx-calendar-check'></i>
+                    </div>
+                    <div class="service-content">
+                        <h2>Reservas</h2>
+                        <p>Reserve conosco de forma fácil e rápida. Nosso processo 
+                            é intuitivo, sem complicações, para que você possa focar 
+                            no que importa: aproveitar seu tempo conosco. Faça suas 
+                            reservas agora e crie momentos memoráveis.</p>
+                    </div>
+                </div>
+            
+                <div class="service-card">
+                    <div class="services-icons">
+                        <i class='bx bxs-timer'></i>
+                    </div>
+                    <div class="service-content">
+                        <h2>Tempo</h2>
+                        <p>Em nosso estabelecimento, a experiência do cliente é nossa
+                             prioridade absoluta, e isso se reflete na agilidade do
+                              nosso serviço. Estamos dedicados a assegurar que o 
+                              tempo de espera por sua refeição seja mínimo, para que
+                               você possa desfrutar de pratos deliciosos de maneira 
+                               rápida e eficiente.</p>
+                    </div>
+                </div>
+            
+                <div class="service-card">
+                    <div class="services-icons">
+                        <i class='bx bx-plus'></i>
+                    </div>
+                    <div class="service-content">
+                        <h2>Melhorias</h2>
+                        <p>Em nosso restaurante, estamos comprometidos com a melhoria
+                             contínua para oferecer a você a melhor experiência 
+                             gastronômica possível. Valorizamos a busca constante 
+                             pela excelência, adaptando-nos às preferências dos 
+                             nossos clientes e aprimorando constantemente nosso 
+                             cardápio e serviços.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--Secção do Contacto onde foi necessário criar um forms para o seu preenchimento-->
+        <section>
+            <div id="contact" class="contact-us">
+                <h1>Contact Us</h1>
+                <div class="line"></div>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="box">
+                        <div class="icon"><i class='bx bx-map'></i></div>
+                        <div class="text">
+                            <h3>Adress</h3>
+                            <p>Rua das Flores, 123, <br> 4000-001 Porto <br> Portugal</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class='bx bxs-phone' ></i></div>
+                        <div class="text">
+                            <h3>Phone</h3>
+                            <p>+351 923 311 421</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon"><i class='bx bx-envelope' ></i></div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p>oprato@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <h2>Contacte-nos</h2>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Nome Completo</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="text" name="" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea required="required"></textarea>
+                            <span>Mensagem...</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--Esta secção é dedicada ao Footer onde foi necessário utilisar listagem e icons para o seu preenchimento-->
+        <section>
+            <footer>
+                <div class="footerContainer">
+                    <div class="socialIcons">
+                        <a href=""><i class='bx bxl-facebook-circle' ></i></a>
+                        <a href=""><i class='bx bxl-instagram-alt' ></i></a>
+                        <a href=""><i class='bx bxl-twitter' ></i></a>
+                        <a href=""><i class='bx bxl-google-plus-circle' ></i></a>
+                        <a href=""><i class='bx bxl-youtube' ></i></a>
+                    </div>
+                    <div class="footerNav">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                            <li><a href="#">Our Team</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footerBottom">
+                    <p>Copyright &copy;2023; Designed by <span class="artist">José Guedes</span></p>
+                </div>
+        </footer>
+        </section>
+    </body>
+</html>

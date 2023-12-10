@@ -1,0 +1,254 @@
+/*CSS da página inicial da class hero*/
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat:wght@700&family=Courgette&family=Jost:wght@500&family=Montserrat&family=Poppins:wght@300&family=Raleway:wght@400;500&family=Roboto:ital@1&display=swap');
+
+
+/* Estilos para a seção hero (cabeçalho) */
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1.6rem;
+    color: rgb(253, 253, 253);
+    background: url(/assets/main-photo.jpg) no-repeat center bottom;
+    background-position: bottom;
+    background-size: cover;
+    padding-bottom: 200px;
+}
+
+/* Estilos para a linha decorativa */
+.line {
+    width: 150px;
+    height: 4px;
+    background: rgb(255, 0, 0);
+    margin: 10px 0;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+/* Estilos para a seção de "Mais Populares" */
+.most-popular {
+    font-size: 2rem;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tamanho para as estrelas de avaliação */
+.stars-container {
+    font-size: 40px;
+}
+
+.checked {
+    color: orange;
+}
+
+/* Estilos para o container de cartões */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+/* Estilos para um cartão específico */
+.card {
+    width: 325px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 50px;
+    transition: transform 0.3s ease 0s;
+}
+
+/* Efeito de elevação no cartão ao passar o rato */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilos para as imagens dentro do cartão */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Estilos para o conteúdo dentro do cartão */
+.card-content {
+    padding: 16px;
+}
+
+.card-content h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.card-content {
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.card-content .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #333;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+/* Estilos para a seção "Sobre Nós" */
+.about-us {
+    font-size: 2rem;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para o container "Sobre Nós" */
+.about-container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+/* Estilos para a seção "Sobre Nós" com imagem e conteúdo */
+.about {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Estilos para a imagem na seção "Sobre Nós" */
+.about-image {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Estilos para o conteúdo na seção "Sobre Nós" */
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Estilos para a seção "Nossos Serviços" */
+.our-service {
+    font-size: 2rem;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para o container de cartões de serviços */
+.service-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+/* Estilos para um cartão específico de serviço */
+.service-card {
+    width: 325px;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    overflow: hidden;
+    border-radius: 8px;
+    margin: 50px;
+    transition: transform 0.3s ease 0s;
+}
+
+/* Efeito de elevação no cartão de serviço ao passar o rato */
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilos para o conteúdo dentro do cartão de serviço */
+.service-content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-content h2 {
+    margin-bottom: 20px;
+}
+
+/* Estilos para os ícones de serviço */
+.services-icons {
+    font-size: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* Design responsivo */
+@media (max-width: 1228px) {
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero h1 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h2 {
+        font-size: 1.9rem;
+    }
+
+    .line {
+        width: 90px;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 738px) {
+    .about {
+        flex-direction: column;
+    }
+
+    .about-image {
+        order: -1;
+        margin-right: 0;
+        margin-bottom: 20px; 
+    }
+
+    .about-content {
+        order: 1; 
+    }
+}

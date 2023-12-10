@@ -1,0 +1,77 @@
+/* Estilos para o rodapé */
+footer {
+    background-color: #111;
+}
+
+/* Container principal do rodapé */
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+/* Ícones sociais no rodapé */
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: white;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.socialIcons a i {
+    font-size: 2rem;
+    color: black;
+    opacity: 0.9;
+}
+
+/* Navegação no rodapé */
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footerNav ul li a {
+    color: white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    opacity: 0.7;
+}
+
+/* Efeito de destaque ao passar o rato na navegação do rodapé */
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+/* Área inferior do rodapé */
+.footerBottom {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+}
+
+/* Design responsivo para telas menores que 701px */
+@media screen and (max-width: 701px) {
+    /* Ajuste da orientação da lista de navegação para coluna */
+    .footerNav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Ajuste do estilo dos itens da lista de navegação para ocupar 100% da largura e centralizados */
+    .footerNav ul li {
+        width: 100%;
+        text-align: center;
+        margin: 10px;
+    }
+}

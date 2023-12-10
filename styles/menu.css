@@ -1,0 +1,177 @@
+/* CSS página Menu */
+
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+
+/* Estilos globais para a página */
+body {
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilos para a linha decorativa */
+.line {
+    width: 150px;
+    height: 4px;
+    background: rgb(255, 0, 0);
+    margin: 10px 0;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+/* Estilos para a seção do menu */
+.Menu {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para o título da seção do menu */
+.Menu h1 {
+    padding-top: 50px;
+    margin: 0;
+}
+
+/* Estilos para o título das opções do menu */
+.options-title {
+    display: flex;
+    justify-content: center;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* Estilos para o conteúdo das opções do menu */
+.options-content {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para um item individual no menu */
+.single-menu {
+    display: inline-block;
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+/* Estilos para o cartão de menu */
+.card {
+    max-width: 220px;
+    height: 375px;
+    border-radius: 10%;
+    padding: 24px;
+    background-color: wheat;
+    transition: transform 0.3s ease 0s;
+}
+
+/* Estilos para as imagens dentro do cartão de menu */
+.images {
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12%;
+}
+
+/* Estilos de conteúdo dentro do cartão de menu */
+.menu-content {
+    font-size: 20px;
+}
+
+/* Efeito de elevação no cartão de menu ao passar o rato */
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilos para a secção de pratos principais */
+.pratos {
+    font-family: 'Ephesis';
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+/* Estilos para o cartão específico de comida */
+.card-comida {
+    color: rgb(121, 81, 7);
+    font-family: 'Ephesis';
+    font-size: 25px;
+    max-width: 100vh;
+    height: 800px;
+    background-color: wheat;
+    margin-left: 290px;
+}
+
+/* Estilos para o título dentro do cartão de comida */
+.card-title {
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para a seção de bebidas */
+.bebidas-title {
+    padding-top: 90px;
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+/* Estilos para o cartão específico de bebidas */
+.card-bebidas {
+    color: rgb(121, 81, 7);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding-left: 25px;
+    margin: 0 auto;
+    max-width: 800px; 
+    height: 650px;
+    background-color: wheat;
+}
+
+/* Estilos para o título dentro do cartão de bebidas */
+.card-title {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Estilos para a secção de sobremesas */
+.subermesas-title {
+    font-family: 'Ephesis';
+    padding-top: 50px;
+    font-size: 60px;
+    padding-left: 150px;
+    margin: 0px;
+    display: inline;
+}
+
+/* Estilos para o cartão específico de sobremesas */
+.card-sobremesas {
+    color: rgb(121, 81, 7);
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding-left: 25px;
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    max-width: 800px; /* Define uma largura máxima para a responsividade */
+    height: 660px;
+    background-color: wheat;
+}
+
+/* Design responsivo */
+@media screen and (max-width: 800px) {
+    .card-bebidas {
+        margin: 0;
+        max-width: 100%;
+    }
+}

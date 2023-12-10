@@ -1,0 +1,150 @@
+/*CSS dá página principal do site*/
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Jost:wght@500&family=Montserrat&family=Poppins:wght@300&family=Raleway:wght@500&family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&display=swap');
+@import url(hero.css);  /*Pasta onde está localizado as alterações da class hero*/
+@import url(contact.css);/*Pasta onde está localizado a parte dos contactos*/
+@import url(footer.css);/*Pasta onde está localizado a parte do footer*/
+
+* {
+    margin: 0;
+    padding: 0;                  /*Tipo de letra e remover as margins a volta e o padding*/
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 10rem;      /*Âncora da pagina fazer com que o scroll va de forma suave*/
+}
+
+/* Estilos globais para a página */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/*adicionar um efeito de desfoque com filtro de plano de fundo */
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(50px);
+    z-index: -1;
+}
+
+/* Estilos para o logotipo no cabeçalho */
+.logo {
+    font-family: 'Ephesis';
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* Estilos para os links de navegação no cabeçalho */
+.navbar a {
+    font-size: 1.15rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+
+/* Estilos para o ícone de menu responsivo (hamburguer)*/
+#check {
+    display: none;
+}
+
+/* Estilos para os ícones no cabeçalho */
+.icons {
+    position: absolute;
+    right: 5%;
+    font-size: 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+/* Media queries para lidar com diferentes tamanhos de tela */
+@media (max-width: 992px) {
+    /* Ajuste de padding no cabeçalho para telas menores */
+    .header {
+        padding: 1.3rem 5%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Exibição dos ícones de menu responsivo */
+    .icons {
+        display: inline-flex;
+    }
+
+    /* Manipulação de ícones de menu e close para o estado de verificação (#check) */
+    #check:checked~.icons #menu-icon {
+        display: none;
+    }
+
+    .icons #close-icon {
+        display: none;
+    }
+
+    #check:checked~.icons #close-icon {
+        display: block;
+    }
+
+    /* Estilos para a barra de navegação em telas menores */
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(0, 0, 0, .1);
+        backdrop-filter: blur(50px);
+        box-shadow: 0 .5rem 1rem rgb(0, 0, 0, .1);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+
+    /* Animação da altura da barra de navegação ao verificar (#check) */
+    #check:checked~.navbar {
+        height: 17.7rem;
+    }
+
+    /* Estilos para os links de navegação na barra de navegação em telas menores */
+    .navbar a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: .3s ease;
+    }
+
+    /* Animação de entrada para os links de navegação ao verificar (#check) */
+    #check:checked~.navbar a {
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(.15s * var(--i));
+    }
+}
+

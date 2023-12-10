@@ -1,0 +1,41 @@
+/* CSS da página de Boas Vindas*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Jost:wght@500&family=Raleway:wght@500&family=Roboto:ital@1&display=swap'); /*Importar a Fonte para o Texto*/
+
+body {
+    color: black;
+    background-image: url(/assets/image-welcome-page/tumblr_nyba27sgNu1tchrkco1_500.gif);
+    background-size: cover;
+    background-repeat: no-repeat;       /*Imagem de Fundo de maneira a oucupar a tela toda, sem se repetir*/                            
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;     /* Configuração para o layout flexível, centralizando elementos vertical e horizontalmente */       
+    margin-top: 7%;
+    font-family: 'Caveat';  
+}
+
+.hero-title {
+    font-size: 50px;
+    font-family: 'Amatic SC';  /*Aumentar o tamanho de letra e utilizar a fonte selecionada*/
+}
+
+
+/* Estilos para um botão: tamanho da fonte grande, borda preta, fundo preto com bordas arredondadas, texto branco, cursor de ponteiro, e espaçamento interno de 10 pixels. */
+.button {
+    font-size: x-large;
+    border: black;
+    background-color: black;
+    border-radius: 12%;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
